@@ -17,7 +17,9 @@ int main() {
         line from the input
     */
     input[strcspn(input, "\n")] = 0;
-    printf("Hello, %s, nice to meet you!", input);
+    printf("Hello, %s, nice to meet you!\n", input);
+    printf("%s has %d characters.\n", input, strlen(input));
+    printf("You said, your name is: \"%s\", Ya?\n", input);
 
     return 0;
 }
