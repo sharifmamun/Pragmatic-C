@@ -16,6 +16,9 @@ int main() {
     // Remove the newline from the end
     firstNum[strcspn(firstNum, "\n")] = 0;
     // String to integer conversion
+    // sscanf might not be the best solution because
+    // it actually can't convert a number outside the range of its type
+    // for instance, sscanf("999999999999999999999", "%d", &n) will fail
     sscanf(firstNum, "%d", &num1);
 
     printf("What is the second Number?");
