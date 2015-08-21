@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
 
     strftime(buffer, 26, "%Y", tm_info);
     sscanf(buffer, "%d", &num3);
-    printf("It's %d, so you can retire in %d\n", num3, num3 + (num2-num1));
+    printf("It's %d, so you can retire in %d.\n", num3, num3 + (num2-num1));
 
     return 0;
 }
